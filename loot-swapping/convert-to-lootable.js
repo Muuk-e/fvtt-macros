@@ -1,7 +1,7 @@
 // For all currently selected tokens, changes their actor sheet to LootSheetNPC,
 // deletes all non-lootable items, sets token Observer privs for players, and adds a treasure
 // overlay icon to the body. Asks for confirmation because of the deletions.
-//
+// Updated to match LootsheetNPC5e by @Muuk-e
 // Original script by tas (ygg#0922) -- thanks tas!
 // Evolved with help from a ton of people, notably: @Akaito, @honeybadger, @kekilla, and @cole
 
@@ -51,7 +51,7 @@ async function ConvertToLootable() {
     let newActorData = {
       flags: {
         core: {
-          sheetClass: 'dnd5e.LootSheet5eNPC',
+          sheetClass: 'dnd5e.LootSheetNPC5e',
         },
         lootsheetnpc5e: {
           lootsheettype: 'Loot',
